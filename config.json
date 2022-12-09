@@ -1,0 +1,16 @@
+{
+	"SerialPort": "",
+	"host": "",
+	"data": {
+		"clientName": "Client01",
+		"commands": {
+	      	"RGB": {
+				"desc": "Control the serial device leds connected on port 9, 10 and 11",
+				"type": "color.RGB",
+				"args": "9:${R} 10:${G} 11:${B}"
+			}
+		}
+	},
+	"runOnStart": "RGB 9:0 10:0 11:0",
+	"readyOutput": "Ready!\r\n"
+}
